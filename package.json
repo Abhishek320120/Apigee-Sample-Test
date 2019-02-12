@@ -1,0 +1,13 @@
+{
+  "name": "apigee",
+  "version": "1.0.0",
+  "description": "Test Demo",
+  "main": "index.js",
+  "scripts": {
+    "api-tests-test": "newman runTests ApigeeSamplePostManTests.postman_collection"
+  },
+  "author": "Abhishek Roy",
+  "dependencies": {
+    "newman": "^4.3.2"
+  }
+  }

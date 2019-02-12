@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "2b9ab325-e73c-4fba-b069-e257d6a3bb94",
+		"name": "ApigeeSamplePostManTests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://abhishekroyaec-eval-test.apigee.net/v1/sampletestproxy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "85555cdb-9f51-4e0d-962a-f69ef1dbef5d",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Apigee\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://abhishekroyaec-eval-test.apigee.net/v1/sampletestproxy",
+					"protocol": "http",
+					"host": [
+						"abhishekroyaec-eval-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"v1",
+						"sampletestproxy"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
