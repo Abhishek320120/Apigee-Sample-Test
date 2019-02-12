@@ -1,13 +1,18 @@
 {
   "name": "apigee",
   "version": "1.0.0",
-  "description": "Test Demo",
-  "main": "index.js",
+  "description": "",
   "scripts": {
-    "api-tests-test": "newman runTests ApigeeSamplePostManTests.postman_collection"
+    "api-tests-test": "newman run Tests/ApigeeSamplePostManTests.postman_collection.json"
   },
-  "author": "Abhishek Roy",
-  "dependencies": {
-    "newman": "^4.3.2"
-  }
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhishek320120/Apigee-Sample-Test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abhishek320120/Apigee-Sample-Test/issues"
+  },
+  "homepage": "https://github.com/Abhishek320120/Apigee-Sample-Test#readme"
+}
